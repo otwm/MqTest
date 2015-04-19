@@ -6,3 +6,5 @@ $>sudo rabbitmqctl set_user_tags rabbitmq administrator
 http://localhost:15672/
 
 http://abh0518.net/tok/?p=384
+
+test
