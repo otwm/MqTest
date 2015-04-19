@@ -7,4 +7,3 @@ http://localhost:15672/
 
 http://abh0518.net/tok/?p=384
 
-test
