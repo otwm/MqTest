@@ -1,4 +1,4 @@
-package casestudy.case2.durability;
+package casestudy.case2.pair_dispatch;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;

@@ -1,4 +1,4 @@
-package casestudy.case2.durability;
+package casestudy.case2.pair_dispatch;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
@@ -23,10 +23,8 @@ public class Worker {
 		Connection connection = factory.newConnection();
 		Channel channel = connection.createChannel();
 
-		channel.queueDeclare(QUEUE_NAME, true, false, false, null);// durable
+		channel.queueDeclare(QUEUE_NAME, true, false, false, null);//durable
 		System.out.println(" [*] Waiting for messages. To exit press CTRL+C");
-
-		channel.basicQos(1);// pair dispatch
 
 		QueueingConsumer consumer = new QueueingConsumer(channel);
 		boolean autoAck = false;
