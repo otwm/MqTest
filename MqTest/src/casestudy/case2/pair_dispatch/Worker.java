@@ -13,7 +13,7 @@ import com.rabbitmq.client.QueueingConsumer;
  */
 public class Worker {
 
-	private final static String QUEUE_NAME = "hello";
+	private final static String QUEUE_NAME = "task_queue";
 
 	public static void main(String[] argv) throws java.io.IOException,
 			java.lang.InterruptedException {
